@@ -121,7 +121,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'LeaseXpert Production(9f35d0bf-3c25-49d5-90d7-301d0f0cab0f)'
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appType: 'webAppLinux'
               appName: '$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
